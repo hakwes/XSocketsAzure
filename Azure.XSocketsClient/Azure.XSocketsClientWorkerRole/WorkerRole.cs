@@ -36,7 +36,7 @@ namespace Azure.XSocketsClientWorkerRole
 
             xsocketsClient.StartInfo = startInfo;
             xsocketsClient.Start();
-            xsocketsClient.Attach(); // Attach to the visual studio debugger using extension method
+           // xsocketsClient.Attach(); // Attach to the visual studio debugger using extension method
 
             while (true)
             {
