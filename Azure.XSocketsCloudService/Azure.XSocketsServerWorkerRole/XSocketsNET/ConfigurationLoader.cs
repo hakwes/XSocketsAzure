@@ -17,8 +17,6 @@ namespace Azure.XSocketsServer
             Endpoint = RoleEnvironment.CurrentRoleInstance.InstanceEndpoints["XSocketsEndpoint"].IPEndpoint;
             Port = uri.Port;
             Origin = GetOrigins();
-            Location = uri.Host;
-            Scheme = uri.Scheme;
             Uri = uri;
             BufferSize = 8192;
             //RemoveInactiveStorageAfterXDays = 7;
