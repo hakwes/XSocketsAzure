@@ -13,10 +13,12 @@ namespace XSocketsConsoleClient
 
         static void Main(string[] args)
         {
-            Thread.Sleep(10000); //To allow the console to be attached to the visual studio debugger. 
-            XSocketClient ws = new XSocketClient("ws://127.0.0.1:4502/Generic",  "http://*", false);
+            Thread.Sleep(10000);   //To allow the console to be attached to the visual studio debugger.
+            // Will throw here.
+
             try
             {
+                XSocketClient ws = new XSocketClient(@"ws://127.0.0.1:4502/Generic", "http://*", true);
                 ws.OnOpen += (s, e) =>
                 {
                     Console.WriteLine("Connected");
