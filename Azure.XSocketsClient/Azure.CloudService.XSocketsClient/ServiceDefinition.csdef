@@ -5,6 +5,8 @@
       <Import moduleName="Diagnostics" />
     </Imports>
     <ConfigurationSettings>
+      <Setting name="XSockets.PluginCatalog" />
+      <Setting name="XSockets.PluginFilter" />
     </ConfigurationSettings>
     <LocalResources>
       <LocalStorage name="LocalStorage" cleanOnRoleRecycle="false" />
