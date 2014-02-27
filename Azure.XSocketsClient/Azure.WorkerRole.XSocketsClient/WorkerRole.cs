@@ -41,6 +41,9 @@ namespace Azure.XSocketsClientWorkerRole
 
         public override bool OnStart()
         {
+            string customTempLocalResourcePath = RoleEnvironment.GetLocalResource("LocalStorage").RootPath;
+            Environment.SetEnvironmentVariable("TMP", customTempLocalResourcePath);
+            Environment.SetEnvironmentVariable("TEMP", customTempLocalResourcePath);
             ServicePointManager.DefaultConnectionLimit = 12;
             return base.OnStart();
         }

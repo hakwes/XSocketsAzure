@@ -34,36 +34,41 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.WindowsAzure.ServiceRuntime, Version=1.7.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft SDKs\Windows Azure\.NET SDK\v2.2\ref\Microsoft.WindowsAzure.ServiceRuntime.dll</HintPath>
+    </Reference>
     <Reference Include="ServiceStack.Text, Version=3.9.69.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\XSockets.Core.3.0.4\lib\net40\ServiceStack.Text.dll</HintPath>
+      <HintPath>..\packages\XSockets.Core.3.0.4.1\lib\net40\ServiceStack.Text.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
-    <Reference Include="XSockets.Client, Version=3.0.4.0, Culture=neutral, PublicKeyToken=520ef9591365bbb5, processorArchitecture=MSIL">
+    <Reference Include="XSockets.Client, Version=3.0.4.1, Culture=neutral, PublicKeyToken=e0d515f22052a108, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\XSockets.Client.3.0.4\lib\net40\XSockets.Client.dll</HintPath>
+      <HintPath>..\packages\XSockets.Client.3.0.4.1\lib\net40\XSockets.Client.dll</HintPath>
     </Reference>
-    <Reference Include="XSockets.Core, Version=3.0.4.0, Culture=neutral, PublicKeyToken=520ef9591365bbb5, processorArchitecture=MSIL">
+    <Reference Include="XSockets.Core, Version=3.0.4.1, Culture=neutral, PublicKeyToken=e0d515f22052a108, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\XSockets.Core.3.0.4\lib\net40\XSockets.Core.dll</HintPath>
+      <HintPath>..\packages\XSockets.Core.3.0.4.1\lib\net40\XSockets.Core.dll</HintPath>
     </Reference>
-    <Reference Include="XSockets.Core.Common, Version=3.0.4.0, Culture=neutral, PublicKeyToken=520ef9591365bbb5, processorArchitecture=MSIL">
+    <Reference Include="XSockets.Core.Common, Version=3.0.4.1, Culture=neutral, PublicKeyToken=e0d515f22052a108, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\XSockets.Core.3.0.4\lib\net40\XSockets.Core.Common.dll</HintPath>
+      <HintPath>..\packages\XSockets.Core.3.0.4.1\lib\net40\XSockets.Core.Common.dll</HintPath>
     </Reference>
-    <Reference Include="XSockets.Plugin.Framework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=520ef9591365bbb5, processorArchitecture=MSIL">
+    <Reference Include="XSockets.Plugin.Framework, Version=1.4.1.0, Culture=neutral, PublicKeyToken=e0d515f22052a108, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\XSockets.Plugin.Framework.1.4.0\lib\XSockets.Plugin.Framework.dll</HintPath>
+      <HintPath>..\packages\XSockets.Plugin.Framework.1.4.1\lib\XSockets.Plugin.Framework.dll</HintPath>
     </Reference>
-    <Reference Include="XSockets.Serialization, Version=3.0.4.0, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="XSockets.Serialization, Version=3.0.4.1, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\XSockets.Core.3.0.4\lib\net40\XSockets.Serialization.dll</HintPath>
+      <HintPath>..\packages\XSockets.Core.3.0.4.1\lib\net40\XSockets.Serialization.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

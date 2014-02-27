@@ -4,5 +4,10 @@
     <Imports>
       <Import moduleName="Diagnostics" />
     </Imports>
+    <ConfigurationSettings>
+    </ConfigurationSettings>
+    <LocalResources>
+      <LocalStorage name="LocalStorage" cleanOnRoleRecycle="false" />
+    </LocalResources>
   </WorkerRole>
 </ServiceDefinition>
