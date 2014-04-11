@@ -18,20 +18,24 @@ namespace Azure.XSocketsClientWorkerRole
         
         public override void Run()
         {
-            Trace.TraceInformation("Azure.SimulatorWorker entry point called", "Information");
+            Trace.TraceInformation("Azure.WorkerRole.XSocketsClient entry point called", "Information");
 
-            xsocketsClient = new Process();
+            for (int i = 0; i < 1; i++)
+            {
+                xsocketsClient = new Process();
 
-            ProcessStartInfo startInfo = new ProcessStartInfo();
-            string path = Assembly.GetExecutingAssembly().Location;
+                ProcessStartInfo startInfo = new ProcessStartInfo();
+                string path = Assembly.GetExecutingAssembly().Location;
 
-            startInfo.WorkingDirectory = Path.GetDirectoryName(path);
-            startInfo.FileName = "Azure.XSocketsConsoleClient.exe";
+                startInfo.WorkingDirectory = Path.GetDirectoryName(path);
+                startInfo.FileName = "Azure.XSocketsConsoleClient.exe";
 
-            Trace.TraceInformation("Starting: " + Path.Combine(startInfo.WorkingDirectory, startInfo.FileName));
+                Trace.TraceInformation("Starting: " + Path.Combine(startInfo.WorkingDirectory, startInfo.FileName));
 
-            xsocketsClient.StartInfo = startInfo;
-            xsocketsClient.Start();
+                xsocketsClient.StartInfo = startInfo;
+                xsocketsClient.Start();
+                Thread.Sleep(3000);
+            }
 
             while (true)
             {
